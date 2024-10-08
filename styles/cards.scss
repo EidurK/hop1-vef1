@@ -1,0 +1,23 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+
+  gap: var(--vertical-space);
+  justify-items: center;
+  max-width: 100%;
+}
+
+@media (width >= 600px) {
+  .card {
+    grid-column: span 4;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  width: 100%;
+  background-color: #ff0000;
+}

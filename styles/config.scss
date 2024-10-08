@@ -1,0 +1,23 @@
+:root {
+  --spacing: 1rem;
+
+  --max-width: 1200px;
+  --min-width-image: 200px;
+  --max-width-image: 300px;
+  --max-width-footer-section: 250px;
+
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+
+  --vertical-space: calc(var(--gutter) * 1);
+  --vertical-space-large: calc(var(--gutter) * 1.5);
+  --spacing: 1rem;
+
+  --width-offset: calc(100% - (2 * var(--offset)));
+
+  //Litir
+  --background-primary: #fafafa;
+  --background-secondary: #F7F1EB;
+}

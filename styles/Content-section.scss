@@ -1,0 +1,22 @@
+
+.content-section {
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.content-section>.content{
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing);
+}
+
+.content-section >.background{
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  background-color: var(--background-secondary);
+}
+
+
