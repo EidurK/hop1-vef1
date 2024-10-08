@@ -1,4 +1,70 @@
 @charset "UTF-8";
+:root {
+  --spacing: 1rem;
+  --max-width: 1200px;
+  --min-width-image: 200px;
+  --max-width-image: 300px;
+  --max-width-footer-section: 250px;
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  --vertical-space: calc(var(--gutter) * 1);
+  --vertical-space-large: calc(var(--gutter) * 1.5);
+  --spacing: 1rem;
+  --width-offset: calc(100% - (2 * var(--offset)));
+  --font-family-heading: "PlayfairDisplay", serif;
+  --font-family-base: "Poppins", arial, helvetica, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-headings: 1.5rem;
+  --background-primary: #fafafa;
+  --background-secondary: #F7F1EB;
+}
+
+html {
+  background-color: var(--color-background-primary);
+  font-size: var(--font-size-base);
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf) format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Poppins", serif;
+  src: url("./fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+html,
+input,
+select,
+button {
+  font-family: var(--font-family-base);
+}
+
+h1, h2, h3, legend {
+  font-family: var(--font-family-heading);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+section {
+  grid-column: span 12;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -19,40 +85,6 @@
   height: 390px;
   width: 100%;
   background-color: #ff0000;
-}
-
-:root {
-  --spacing: 1rem;
-  --max-width: 1200px;
-  --min-width-image: 200px;
-  --max-width-image: 300px;
-  --max-width-footer-section: 250px;
-  /* Grid stillingar */
-  --columns: 12;
-  --gutter: 30px;
-  --offset: 20px;
-  --vertical-space: calc(var(--gutter) * 1);
-  --vertical-space-large: calc(var(--gutter) * 1.5);
-  --spacing: 1rem;
-  --width-offset: calc(100% - (2 * var(--offset)));
-  --background-primary: #fafafa;
-  --background-secondary: #F7F1EB;
-}
-
-html {
-  background-color: var(--color-background-primary);
-}
-
-img {
-  max-width: 100%;
-}
-
-section {
-  grid-column: span 12;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
 }
 
 /* https://css-tricks.com/building-css-grid-overlay/ */
