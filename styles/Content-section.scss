@@ -2,7 +2,6 @@
 .content-section {
   display: grid;
   grid-template-columns: inherit;
-  background-color: var(--background-secondary);
 }
 
 .content-section>.content{
@@ -11,6 +10,13 @@
   display: flex;
   justify-content: space-between;
   gap: var(--spacing);
+}
+
+.content-section >.background{
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  background-color: var(--background-secondary);
 }
 
 

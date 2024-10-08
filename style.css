@@ -55,6 +55,38 @@ section {
   gap: var(--spacing);
 }
 
+/* https://css-tricks.com/building-css-grid-overlay/ */
+:root {
+  --grid-color: hsl(0deg 75% 75% / 25%);
+  --grid-repeating-width: calc(100% / var(--columns));
+  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
+  --grid-background-width: calc(100% + var(--gutter));
+  --grid-background-columns: repeating-linear-gradient(to right,
+  var(--grid-color),
+  var(--grid-color) var(--grid-column-width),
+  transparent var(--grid-column-width),
+  transparent var(--grid-repeating-width));
+}
+
+html {
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: var(--width-offset);
+  max-width: var(--max-width);
+  min-height: 100vh;
+  background-image: var(--grid-background-columns);
+  background-size: var(--grid-background-width) 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
 /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
 * {
   margin: 0;
@@ -130,21 +162,23 @@ html {
 }
 
 .hero-section {
-  justify-content: space-between;
   width: 100%;
-  height: 600px;
+  height: 800px;
 }
 
-.hero-section > .fixed-wrapper {
+.hero-section > .text {
+  height: 100%;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
-  height: inherit;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: var(--spacing);
 }
 
 .content-section {
   display: grid;
   grid-template-columns: inherit;
-  background-color: var(--background-secondary);
 }
 
 .content-section > .content {
@@ -155,15 +189,32 @@ html {
   gap: var(--spacing);
 }
 
+.content-section > .background {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  background-color: var(--background-secondary);
+}
+
 .background-image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: inherit;
+  overflow: hidden;
+}
+
+.background-image > .group {
   position: relative;
+  top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 65%;
 }
 
-.background-image > .shadow-circle {
+.background-image .shadow-circle {
   position: absolute;
   display: flex;
   align-items: center;

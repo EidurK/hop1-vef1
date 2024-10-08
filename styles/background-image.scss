@@ -1,14 +1,24 @@
 .background-image{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end; 
+  height: inherit;
+  overflow: hidden;
+}
+.background-image > .group{
   position: relative;
+  top: 10%;
   display: flex;
   align-items: center;
   justify-content:center; 
-  width: 100%;
+  
+  width: 65%;
 }
-.background-image >.shadow-circle {
+
+.background-image .shadow-circle {
   position: absolute;
   display: flex;
-  
 
   align-items: center;
   justify-content: center;

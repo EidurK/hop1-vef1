@@ -1,13 +1,16 @@
-.hero-section {
-  justify-content: space-between;
+.hero-section{
   width: 100%;
-  height: 600px;
+  height: 800px;
+}
 
-  
-}
-.hero-section>.fixed-wrapper{
+.hero-section>.text{
+  height:100%; 
+  width: 50%;
   display: flex;
-  justify-content: space-between;
-  height: inherit;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: var(--spacing);
 }
+
 
