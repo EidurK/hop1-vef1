@@ -1,0 +1,16 @@
+
+.content-section {
+  display: grid;
+  grid-template-columns: inherit;
+  background-color: var(--background-secondary);
+}
+
+.content-section>.content{
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing);
+}
+
+

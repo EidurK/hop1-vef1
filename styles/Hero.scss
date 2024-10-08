@@ -1,0 +1,13 @@
+.hero-section {
+  justify-content: space-between;
+  width: 100%;
+  height: 600px;
+
+  
+}
+.hero-section>.fixed-wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+

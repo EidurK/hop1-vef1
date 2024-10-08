@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,75 +7,83 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      
-    </header>
-    <nav>
-      <ul>
-        <li><a href="sidur/Recipe.html">Recipe</a></li>
-        <li><a href="sidur/Video.html">Videos</a></li>
-        <li><a href="sidur/Aboutus.html">About us</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section class="hero-section">
+    <div class="wrapper">
+      <header></header>
+      <div class="wrapper-content">
+        <nav class="wrapper-nav">
+          <ul>
+            <li><a href="sidur/Recipe.html">Recipe</a></li>
+            <li><a href="sidur/Video.html">Videos</a></li>
+            <li><a href="sidur/Aboutus.html">About us</a></li>
+          </ul>
+        </nav>
+        <main class="wrapper-main">
+          <section class="hero-section">
+            <div class="fixed-wrapper">
+              <div class="text">
+                <h1>Pumpkin pie</h1>
+                <p>Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
+                <button type="button">See more</button>
+              </div>
+              <div class="background-image">
+                <div class="shadow-circle"></div>
+                  <img src="myndir/PumpkinPie.png" alt=""></img>
+              </div>
+            </div>
 
-        <div class="content">
-          <!--info text mun vera með heading, texta og takka til að kíkja á eithvað-->
-          <div class="info-text">
-            <h1>Pumpkin pie</h1>
-            <p>Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
+            <!--info text mun vera með heading, texta og takka til að kíkja á eithvað-->
+          </section>
+
+          <section class="latest-recipe-section">
+            <h2>Check out our latest recipes</h2>
+            <div class="cards">
+              <!--Þarf að búa til macro til að setja inn myndir og texta automatically--> 
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+            <!--Hver cards mun halda 3 card-->
+            <div class="cards">
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
             <button type="button">See more</button>
-              
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section class="latest-recipe-section">
-        <h2>Check out our latest recipes</h2>
-        <div class="cards">
-          <!--Þarf að búa til macro til að setja inn myndir og texta automatically--> 
-          <div class="card">
-            <img src="" alt="">
-            <p class="date">September</p>
-            <h6>name-of-item</h6>
-            <a href="sidur/Recipe.html">Read more</a>
-          </div>
-        </div>
-        <!--Hver cards mun halda 3 card-->
-        <div class="cards">
-          
-        </div>
-        <button type="button">See more</button>
-      </section>
+          <section class="content-section">
+            <div class="content">
+              <!--info text mun vera með heading, texta og takka til að kíkja á eithvað-->
+              <div class="text">
+                <h1>Our book is out</h1>
+                <p>Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
+                <button type="button">See more</button>
+              </div>
+              <div class="image">
+                <img src="myndir/Magazine.png" alt="">
 
-      <section class="content-section">
-        <div class="content">
-          <!--info text mun vera með heading, texta og takka til að kíkja á eithvað-->
-          <div class="info-text">
-            <h1>Our book is out</h1>
-            <p></p>
-            <button type="button">See more</button>
-          </div>
-        </div>
-      </section>
+              </div>
+            </div>
+          </section>
 
-      <section class="video-section">
-        <div class="content">
-          <div class="cards">
-            
-          </div>
-          <button type="">See more</button>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>Come and join us for more recipes</p>
-      <ul>
-        <li>Facebook</li>
-        <li>Facebook</li>
-        <li>Facebook</li>
-      </ul>
-    </footer>
+          <section class="video-section">
+            <div class="content">
+              <div class="cards">
+
+              </div>
+              <button type="">See more</button>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer>
+        <p>Come and join us for more recipes</p>
+        <ul>
+          <li>Facebook</li>
+          <li>Facebook</li>
+          <li>Facebook</li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

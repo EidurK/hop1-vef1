@@ -1,0 +1,26 @@
+.background-image{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:center; 
+  width: 100%;
+}
+.background-image >.shadow-circle {
+  position: absolute;
+  display: flex;
+  
+
+  align-items: center;
+  justify-content: center;
+
+  width:80% ;
+  aspect-ratio: 1/1;
+
+  box-shadow: -20px 10px 60px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  z-index: -1;
+}
+.background-image img {
+  position: relative;
+}
+

@@ -9,7 +9,8 @@
     "sass-watch": "sass --watch styles.scss style.css",
     "browser-sync": "browser-sync start --server --files index.html *.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
-    "lint": "stylelint styles.scss './styles/*.scss'"
+    "lint": "stylelint styles.scss './styles/*.scss'",
+    "lint-fix": "stylelint styles.scss './styles/*.scss' --fix"
   },
   "author": "Eidur",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "browser-sync": "^3.0.3",
     "concurrently": "^9.0.1",
     "sass": "^1.79.4",
-    "stylelint": "^16.9.0"
+    "stylelint": "^16.9.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1"
   }
 }
