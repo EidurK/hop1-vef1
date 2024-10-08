@@ -4,7 +4,12 @@
   "description": "Hópaverkefni?",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch styles.scss style.css",
+    "browser-sync": "browser-sync start --server --files index.html *.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss './styles/*.scss'"
   },
   "author": "Eidur",
   "license": "ISC",
