@@ -58,16 +58,9 @@ h1 {
 }
 
 section {
-  width: var(--width-offset);
-  max-width: var(--max-width);
-  grid-column: span 12;
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  justify-items: center;
-  gap: var(--gutter);
+  justify-content: center;
+  align-items: center;
 }
 
 .cards {
@@ -164,7 +157,7 @@ html {
   /* Notum grid hér til að setja upp bil á milli header, meginmáls og fóts */
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: var(--columns);
+  grid-template-columns: auto;
   /* grid items eru miðjuð */
   justify-items: center;
   gap: var(--vertical-space);
@@ -179,32 +172,30 @@ html {
   }
 }
 .wrapper .wrapper-nav {
+  width: 100%;
   margin-bottom: var(--spacing);
 }
 
-.hero-section {
+.wrapper .wrapper-main {
   width: 100%;
+}
+
+.hero-section {
   height: 800px;
-  position: relative;
-  overflow: hidden;
 }
 
 .hero-section > .content {
-  grid-column: span 12;
-  display: inherit;
-  grid-template-columns: inherit;
-  position: sticky;
-  top: 0;
-  height: inherit;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1;
+  width: var(--width-offset);
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  justify-items: center;
+  gap: var(--gutter);
 }
 
-.hero-section > .text {
+.hero-section .text {
   grid-column: span 5;
   height: 100%;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -233,20 +224,19 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: inherit;
   width: 100vw;
+  height: inherit;
   overflow: hidden;
-  background-color: #ff0000;
-  left: -10%;
+  z-index: -1;
 }
 
 .background-image > .group {
   position: relative;
-  top: 10%;
+  top: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65%;
+  width: 50%;
 }
 
 .background-image .shadow-circle {

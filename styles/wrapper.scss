@@ -10,7 +10,7 @@
   /* Notum grid hér til að setja upp bil á milli header, meginmáls og fóts */
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: var(--columns);
+  grid-template-columns: auto;
 
   /* grid items eru miðjuð */
   justify-items: center;
@@ -21,19 +21,18 @@
 
 }
 
-@media (width >= 800px) {
+@media (width >=800px) {
   .wrapper {
     gap: var(--vertical-space-large);
   }
-  .wrapper .wrapper-main{
-
-  }
 }
 
-.wrapper .wrapper-content {}
 
 .wrapper .wrapper-nav {
+  width: 100%;
   margin-bottom: var(--spacing);
 }
 
-
+.wrapper .wrapper-main {
+  width: 100%;
+}
