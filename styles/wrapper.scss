@@ -18,7 +18,6 @@
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-background-primary);
-  animation: var(--transition-time-long) 0s 1 loadTransition;
 
 }
 
@@ -26,24 +25,15 @@
   .wrapper {
     gap: var(--vertical-space-large);
   }
-  .wrapper .wrapper-main {
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    justify-items: center;
-    gap: var(--gutter);
+  .wrapper .wrapper-main{
+
   }
 }
 
-.wrapper .wrapper-content {
-  width: var(--width-offset);
-  max-width: var(--max-width);
-}
+.wrapper .wrapper-content {}
 
 .wrapper .wrapper-nav {
   margin-bottom: var(--spacing);
 }
 
-.wrapper-main {
-  grid-column: span 12;
-}
 

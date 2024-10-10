@@ -1,5 +1,6 @@
 html {
   background-color: var(--color-background-primary);
+  font-size: var(--font-size-base);
 }
 
 img {
@@ -7,3 +8,32 @@ img {
 }
 
 // Hér mun letur koma og fleira 
+@font-face {
+  font-family: "Playfair Display";
+  src: url(./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf) format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Poppins", serif;
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+html,
+input,
+select,
+button {
+  font-family: var(--font-family-base);
+}
+
+h1,h2,h3,legend {
+  font-family: var(--font-family-heading);
+}
+h1{
+  font-size: 60px;
+}
+
