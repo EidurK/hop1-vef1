@@ -4,7 +4,10 @@
   align-items: center;
   justify-content:flex-end; 
   height: inherit;
+  width: 100vw;
   overflow: hidden;
+  background-color: #ff0000;
+  left: -10%;
 }
 .background-image > .group{
   position: relative;
