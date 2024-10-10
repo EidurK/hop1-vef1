@@ -1,4 +1,6 @@
 .cards {
+  grid-column: span 12;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
@@ -8,7 +10,7 @@
   max-width: 100%;
 }
 
-@media (width >= 600px) {
+@media (width >=600px) {
   .card {
     grid-column: span 4;
   }
@@ -19,5 +21,5 @@
   flex-direction: column;
   height: 390px;
   width: 100%;
-  background-color: #ff0000;
+  background-color: #b0f5c9;
 }

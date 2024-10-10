@@ -1,4 +1,33 @@
 @charset "UTF-8";
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+  box-sizing: border-box;
+}
+
+/* og látum erfast á allt */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus, :active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 :root {
   --spacing: 1rem;
   --max-width: 1200px;
@@ -57,6 +86,36 @@ h1 {
   font-size: 60px;
 }
 
+/**
+ * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
+ * Við förum yfir flexbox í viku 4 en þangað til er hægt að nota þetta
+ * sem grunn og án breytinga.
+ * Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
+ * innan <body>.
+ */
+.wrapper {
+  /* Notum grid hér til að setja upp bil á milli header, meginmáls og fóts */
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  /* grid items eru miðjuð */
+  justify-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background-primary);
+}
+
+.wrapper .wrapper-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper .wrapper-main {
+  width: 100%;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -64,6 +123,8 @@ section {
 }
 
 .cards {
+  grid-column: span 12;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
@@ -82,7 +143,7 @@ section {
   flex-direction: column;
   height: 390px;
   width: 100%;
-  background-color: #ff0000;
+  background-color: #b0f5c9;
 }
 
 /* https://css-tricks.com/building-css-grid-overlay/ */
@@ -117,74 +178,7 @@ html::before {
   pointer-events: none;
 }
 
-/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Reiknum stærð á öllum boxum sem border-box */
-html {
-  box-sizing: border-box;
-}
-
-/* og látum erfast á allt */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
-.sr-only:not(:focus, :active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/**
- * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
- * Við förum yfir flexbox í viku 4 en þangað til er hægt að nota þetta
- * sem grunn og án breytinga.
- * Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
- * innan <body>.
- */
-.wrapper {
-  /* Notum grid hér til að setja upp bil á milli header, meginmáls og fóts */
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
-  /* grid items eru miðjuð */
-  justify-items: center;
-  gap: var(--vertical-space);
-  width: 100%;
-  min-height: 100vh;
-  background-color: var(--color-background-primary);
-}
-
-@media (width >= 800px) {
-  .wrapper {
-    gap: var(--vertical-space-large);
-  }
-}
-.wrapper .wrapper-nav {
-  width: 100%;
-  margin-bottom: var(--spacing);
-}
-
-.wrapper .wrapper-main {
-  width: 100%;
-}
-
-.hero-section {
-  height: 800px;
-}
-
-.hero-section > .content {
+.content {
   width: var(--width-offset);
   max-width: var(--max-width);
   display: grid;
@@ -193,29 +187,14 @@ html {
   gap: var(--gutter);
 }
 
-.hero-section .text {
+.content .text {
   grid-column: span 5;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  gap: var(--spacing);
-}
-
-.content-section {
-  display: grid;
-  grid-template-columns: inherit;
-  background-color: var(--background-secondary);
-  height: 800px;
-}
-
-.content-section > .content {
-  grid-column-start: 2;
-  grid-column-end: 12;
-  height: inherit;
-  display: flex;
-  justify-content: space-between;
   gap: var(--spacing);
 }
 
@@ -227,7 +206,6 @@ html {
   width: 100vw;
   height: inherit;
   overflow: hidden;
-  z-index: -1;
 }
 
 .background-image > .group {
@@ -253,6 +231,24 @@ html {
 
 .background-image img {
   position: relative;
+}
+
+.hero-section {
+  height: 800px;
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: inherit;
+  background-color: var(--background-secondary);
+  height: 800px;
+  position: relative;
+}
+
+.content-section > .content > .foreground-image {
+  position: absolute;
+  width: 100%;
+  height: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

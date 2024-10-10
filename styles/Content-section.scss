@@ -3,16 +3,13 @@
   grid-template-columns: inherit;
   background-color: var(--background-secondary);
   height: 800px;
+  position: relative;
 }
 
-.content-section>.content{
-  grid-column-start: 2;
-  grid-column-end: 12;
+
+
+.content-section>.content>.foreground-image {
+  position: absolute;
+  width: 100%;
   height: inherit;
-  display: flex;
-  justify-content: space-between;
-  gap: var(--spacing);
 }
-
-
-

@@ -1,0 +1,19 @@
+.content {
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    justify-items: center;
+    gap: var(--gutter);
+}
+
+.content .text {
+    grid-column: span 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: var(--spacing);
+}
