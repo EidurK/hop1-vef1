@@ -37,3 +37,12 @@ h1{
   font-size: 60px;
 }
 
+
+button {
+  color: var(--description-color);
+  border-color:var(--description-color);
+  background-color: #ff000000;
+  border: solid;
+  width: 250px;
+  height: 52px;
+}

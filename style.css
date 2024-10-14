@@ -48,6 +48,7 @@ html {
   --font-size-headings: 1.5rem;
   --background-primary: #fafafa;
   --background-secondary: #F7F1EB;
+  --description-color: #E3CDB1;
 }
 
 html {
@@ -84,6 +85,15 @@ h1, h2, h3, legend {
 
 h1 {
   font-size: 60px;
+}
+
+button {
+  color: var(--description-color);
+  border-color: var(--description-color);
+  background-color: rgba(255, 0, 0, 0);
+  border: solid;
+  width: 250px;
+  height: 52px;
 }
 
 /**
@@ -144,38 +154,6 @@ section {
   height: 390px;
   width: 100%;
   background-color: #b0f5c9;
-}
-
-/* https://css-tricks.com/building-css-grid-overlay/ */
-:root {
-  --grid-color: hsl(0deg 75% 75% / 25%);
-  --grid-repeating-width: calc(100% / var(--columns));
-  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
-  --grid-background-width: calc(100% + var(--gutter));
-  --grid-background-columns: repeating-linear-gradient(to right,
-  var(--grid-color),
-  var(--grid-color) var(--grid-column-width),
-  transparent var(--grid-column-width),
-  transparent var(--grid-repeating-width));
-}
-
-html {
-  position: relative;
-}
-
-html::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: var(--width-offset);
-  max-width: var(--max-width);
-  min-height: 100vh;
-  background-image: var(--grid-background-columns);
-  background-size: var(--grid-background-width) 100%;
-  z-index: 1000;
-  pointer-events: none;
 }
 
 .content {
