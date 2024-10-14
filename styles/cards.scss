@@ -23,3 +23,9 @@
   width: 100%;
   background-color: #b0f5c9;
 }
+.card >img{
+  object-fit: cover;
+}
+.card>.text{
+  height: 100px;
+}

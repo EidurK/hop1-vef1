@@ -42,13 +42,15 @@ html {
   --vertical-space-large: calc(var(--gutter) * 1.5);
   --spacing: 1rem;
   --width-offset: calc(100% - (2 * var(--offset)));
-  --font-family-heading: "PlayfairDisplay", serif;
+  --font-family-heading: "Playfair Display", serif;
   --font-family-base: "Poppins", arial, helvetica, sans-serif;
   --font-size-base: 1rem;
   --font-size-headings: 1.5rem;
   --background-primary: #fafafa;
   --background-secondary: #F7F1EB;
+  --text-color-base: #5E5B69;
   --description-color: #E3CDB1;
+  --hr-line-color: #E7E7E7;
 }
 
 html {
@@ -94,6 +96,32 @@ button {
   border: solid;
   width: 250px;
   height: 52px;
+}
+
+.description_text {
+  display: grid;
+}
+
+.description_text > .description {
+  color: var(--description-color);
+}
+
+.hr_button {
+  width: 100%;
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.hr_button > button {
+  width: 250px;
+}
+
+.hr_button > hr {
+  color: var(--hr-line-color);
+  width: 35%;
 }
 
 /**
@@ -154,6 +182,14 @@ section {
   height: 390px;
   width: 100%;
   background-color: #b0f5c9;
+}
+
+.card > img {
+  object-fit: cover;
+}
+
+.card > .text {
+  height: 100px;
 }
 
 .content {

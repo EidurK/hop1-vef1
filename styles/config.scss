@@ -17,7 +17,7 @@
 
   --width-offset: calc(100% - (2 * var(--offset)));
 
-  --font-family-heading: 'PlayfairDisplay', serif;
+  --font-family-heading: 'Playfair Display', serif;
   --font-family-base: 'Poppins', arial, helvetica, sans-serif;
 
   --font-size-base: 1rem;
@@ -27,5 +27,8 @@
   --background-primary: #fafafa;
   --background-secondary: #F7F1EB;
 
+  --text-color-base: #5E5B69;
+
   --description-color: #E3CDB1;
+  --hr-line-color: #E7E7E7;
 }

@@ -46,3 +46,30 @@ button {
   width: 250px;
   height: 52px;
 }
+
+.description_text {
+  display: grid;
+}
+
+.description_text>.description {
+  color: var(--description-color);
+}
+
+.hr_button{
+  width: 100%;
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing);
+}
+.hr_button>button{
+  width: 250px;
+}
+
+.hr_button > hr{
+  color: var(--hr-line-color);
+  width: 35%;
+}
+
+
