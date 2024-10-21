@@ -1,0 +1,30 @@
+.wrapper-nav{
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--background-primary);
+}
+
+.wrapper-nav>.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-nav .links> ul{
+  display: flex;
+  list-style-type: none;
+  gap: var(--spacing);
+}
+
+
+.wrapper-nav .links> ul li{
+  display: inline;
+}
+.wrapper-nav .links> ul li a{
+  color: var(--text-color-base);
+  text-decoration: none;
+}
+
+
+
