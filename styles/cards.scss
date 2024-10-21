@@ -21,11 +21,22 @@
   flex-direction: column;
   height: 390px;
   width: 100%;
-  background-color: #b0f5c9;
+  background-color: #FFFFFF;
 }
-.card >img{
+.card > img{
   object-fit: cover;
+  height: calc(100% - 100px);
 }
-.card>.text{
+.card >.text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  flex-grow: 1;
+  align-items: flex-end;
   height: 100px;
+}
+
+.card>.text>.description_text>.description {
+  color:var(--text-color-gray);
 }
