@@ -1,5 +1,5 @@
 html {
-  background-color: var(--color-background-primary);
+  background-color: var(--background-primary);
   font-size: var(--font-size-base);
 }
 
@@ -41,7 +41,7 @@ h1{
 button {
   color: var(--description-color);
   border-color:var(--description-color);
-  background-color: #ff000000;
+  background-color: var(--background-primary);
   border: solid;
   width: 250px;
   height: 52px;
@@ -51,7 +51,7 @@ button {
   display: grid;
 }
 
-.description_text>.description {
+.description {
   color: var(--description-color);
 }
 

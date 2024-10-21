@@ -49,12 +49,13 @@ html {
   --background-primary: #fafafa;
   --background-secondary: #F7F1EB;
   --text-color-base: #5E5B69;
+  --text-color-gray: #9B9B9B;
   --description-color: #E3CDB1;
   --hr-line-color: #E7E7E7;
 }
 
 html {
-  background-color: var(--color-background-primary);
+  background-color: var(--background-primary);
   font-size: var(--font-size-base);
 }
 
@@ -92,7 +93,7 @@ h1 {
 button {
   color: var(--description-color);
   border-color: var(--description-color);
-  background-color: rgba(255, 0, 0, 0);
+  background-color: var(--background-primary);
   border: solid;
   width: 250px;
   height: 52px;
@@ -102,7 +103,7 @@ button {
   display: grid;
 }
 
-.description_text > .description {
+.description {
   color: var(--description-color);
 }
 
@@ -160,38 +161,6 @@ section {
   align-items: center;
 }
 
-.cards {
-  grid-column: span 12;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: auto;
-  gap: var(--vertical-space);
-  justify-items: center;
-  max-width: 100%;
-}
-
-@media (width >= 600px) {
-  .card {
-    grid-column: span 4;
-  }
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  height: 390px;
-  width: 100%;
-  background-color: #b0f5c9;
-}
-
-.card > img {
-  object-fit: cover;
-}
-
-.card > .text {
-  height: 100px;
-}
-
 .content {
   width: var(--width-offset);
   max-width: var(--max-width);
@@ -245,6 +214,49 @@ section {
 
 .background-image img {
   position: relative;
+}
+
+.cards {
+  grid-column: span 12;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+  justify-items: center;
+  max-width: 100%;
+}
+
+@media (width >= 600px) {
+  .card {
+    grid-column: span 4;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.card > img {
+  object-fit: cover;
+  height: calc(100% - 100px);
+}
+
+.card > .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  flex-grow: 1;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.card > .text > .description_text > .description {
+  color: var(--text-color-gray);
 }
 
 .hero-section {
