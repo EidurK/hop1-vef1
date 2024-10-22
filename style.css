@@ -51,6 +51,9 @@ html {
   --text-color-gray: #9B9B9B;
   --description-color: #E3CDB1;
   --hr-line-color: #E7E7E7;
+  --newsletter-background: #000000;
+  --newsletter-text-color: #ffffff;
+  --transparent: rgba($color: #000000, $alpha: 0.0);
 }
 
 html {
@@ -89,10 +92,18 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 button {
   color: var(--description-color);
   border-color: var(--description-color);
-  background-color: var(--background-primary);
+  background-color: var(--transparent);
   border: solid;
   width: 250px;
   height: 52px;
@@ -294,6 +305,10 @@ section {
   color: var(--text-color-gray);
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .hero-section {
   height: 800px;
 }
@@ -405,6 +420,33 @@ footer hr {
 
 .ingredients-wrapper b {
   color: var(--text-color-base);
+}
+
+.newsletter-section {
+  background-color: var(--newsletter-background);
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 130px;
+}
+
+.newsletter-section form {
+  color: var(--newsletter-text-color);
+  width: 100%;
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.newsletter-section fieldset {
+  border: none;
+}
+
+.newsletter-section input[type=text] {
+  border: none;
+  border-bottom: 2px solid var(--description-color);
+  color: var(--newsletter-text-color);
+  font: var(--font-family-heading);
+  background-color: var(--transparent);
 }
 
 /*# sourceMappingURL=style.css.map */

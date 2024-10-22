@@ -1,0 +1,28 @@
+.newsletter-section{
+  background-color: var(--newsletter-background);
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 130px;
+}
+
+
+.newsletter-section form{
+  color: var(--newsletter-text-color);
+  width: 100%;
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.newsletter-section fieldset{
+  border: none;
+}
+.newsletter-section input[type=text]{
+  border: none;
+  border-bottom: 2px solid var(--description-color);
+
+  color: var(--newsletter-text-color);
+  font: var(--font-family-heading);
+
+  background-color:var(--transparent) ;
+}
