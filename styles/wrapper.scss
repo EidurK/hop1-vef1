@@ -14,20 +14,27 @@
 
   /* grid items eru miðjuð */
   justify-items: center;
-  //  gap: var(--vertical-space);
+  gap: var(--vertical-space);
 
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-background-primary);
 
 }
+.wrapper .wrapper-main {
+  display: grid;
+  width: 100%;
+  gap: var(--vertical-space);
+}
 
 @media (width >=800px) {
   .wrapper {
-    // gap: var(--vertical-space-large);
+    gap: var(--vertical-space-large);
+  }
+  .wrapper-main{
+    gap: var(--vertical-space-large);
   }
 }
-
 
 .wrapper .wrapper-nav {
   display: flex;
@@ -36,6 +43,3 @@
   width: 100%;
 }
 
-.wrapper .wrapper-main {
-  width: 100%;
-}

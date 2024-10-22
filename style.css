@@ -120,8 +120,33 @@ button {
 }
 
 .hr_button > hr {
-  color: var(--hr-line-color);
   width: 35%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: var(--spacing);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ul li a {
+  color: var(--text-color-base);
+  text-decoration: none;
+}
+
+.difficulty {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /**
@@ -138,19 +163,30 @@ button {
   grid-template-columns: auto;
   /* grid items eru miðjuð */
   justify-items: center;
+  gap: var(--vertical-space);
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-background-primary);
 }
 
+.wrapper .wrapper-main {
+  display: grid;
+  width: 100%;
+  gap: var(--vertical-space);
+}
+
+@media (width >= 800px) {
+  .wrapper {
+    gap: var(--vertical-space-large);
+  }
+  .wrapper-main {
+    gap: var(--vertical-space-large);
+  }
+}
 .wrapper .wrapper-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.wrapper .wrapper-main {
   width: 100%;
 }
 
@@ -262,6 +298,10 @@ section {
   height: 800px;
 }
 
+.hero-section ul {
+  justify-content: flex-start;
+}
+
 .content-section {
   height: 800px;
   position: relative;
@@ -314,24 +354,57 @@ section {
   justify-content: space-between;
 }
 
-.wrapper-nav .links > ul {
-  display: flex;
-  list-style-type: none;
-  gap: var(--spacing);
-}
-
-.wrapper-nav .links > ul li {
-  display: inline;
-}
-
-.wrapper-nav .links > ul li a {
-  color: var(--text-color-base);
-  text-decoration: none;
-}
-
 .logo {
   display: flex;
   flex-direction: row;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+footer > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+footer hr {
+  width: 100%;
+}
+
+.ingredients-wrapper {
+  color: var(--text-color-gray);
+  width: 100%;
+  grid-column: span 4;
+  display: grid;
+  gap: var(--vertical-space);
+}
+
+.method-wrapper {
+  grid-column: span 8;
+  color: var(--text-color-gray);
+  width: 100%;
+}
+
+.ingredients-wrapper ul {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.ingredients-wrapper ul li {
+  justify-content: flex-start;
+}
+
+.ingredients-wrapper b {
+  color: var(--text-color-base);
 }
 
 /*# sourceMappingURL=style.css.map */
