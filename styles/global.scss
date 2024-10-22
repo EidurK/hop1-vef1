@@ -36,12 +36,18 @@ h1,h2,h3,legend {
 h1{
   font-size: 60px;
 }
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 22px;
+}
 
 
 button {
   color: var(--description-color);
   border-color:var(--description-color);
-  background-color: var(--background-primary);
+  background-color:var(--transparent);
   border: solid;
   width: 250px;
   height: 52px;
