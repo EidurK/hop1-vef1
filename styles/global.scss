@@ -43,6 +43,18 @@ h3 {
   font-size: 22px;
 }
 
+a,
+a:visited{
+  text-decoration: none;
+}
+
+a h1,
+a h2,
+a h3 {
+  color: var(--text-color-black);
+}
+
+
 
 button {
   color: var(--description-color);
@@ -93,7 +105,6 @@ ul li{
 
 ul li a{
   color: var(--text-color-base);
-  text-decoration: none;
 }
 
 
@@ -102,3 +113,4 @@ ul li a{
   justify-content: center;
   width: 100%;
 }
+

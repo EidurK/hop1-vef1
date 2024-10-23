@@ -1,0 +1,28 @@
+.video-section {
+  height: 800px;
+  color: var(--text-color-gray);
+}
+.video-section .title{
+  color: var(--text-color-white);
+}
+
+
+.video-section  ul{
+  justify-content: flex-start;
+}
+
+.play-button {
+  
+  position: absolute;
+  margin-left: 50%;
+  width: 138px;
+  height: 138px;
+  aspect-ratio: 1/1;
+
+  border: 3px solid var(--text-color-white);
+  border-radius: 50%;
+  background-image: url('../myndir/Play-Icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
