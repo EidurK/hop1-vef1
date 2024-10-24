@@ -17,27 +17,29 @@
   gap: var(--spacing);
 }
 
-.content .description{
+.content .description {
   color: var(--description-color);
 }
 
-@media (width < 600px){
-  .content{
+@media (width < 600px) {
+  .content {
     display: flex;
     flex-direction: column;
     width: var(--width-small-offset);
   }
-  .content .text{
+
+  .content .text {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .content .description{
+
+  .content .description {
     display: flex;
     justify-content: center;
   }
 
-  .content .text> p{
+  .content .text> p {
     display: none;
   }
 }

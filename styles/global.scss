@@ -10,7 +10,7 @@ img {
 // Hér mun letur koma og fleira 
 @font-face {
   font-family: 'Playfair Display';
-  src: url("./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf") format('woff2');
+  src: url('./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf') format('woff2');
   font-weight: 700;
   font-style: bold;
 }
@@ -49,8 +49,7 @@ h3 {
   font-size: 22px;
 }
 
-@media (width < 600px){
-
+@media (width < 600px) {
   h1 {
     font-size: 32px;
   }
@@ -77,14 +76,12 @@ a h3 {
 
 button {
   color: var(--description-color);
-  border-color: var(--description-color);
+  border: 3px solid var(--description-color);
   background-color: var(--transparent);
-  border: solid;
   width: 250px;
   aspect-ratio: 5/1;
-  
   transition: background-color var(--transition-time-short)
-      var(--transition-timing-function),
+    var(--transition-timing-function),
     color var(--transition-time-short) var(--transition-timing-function),
     border-color var(--transition-time-short) var(--transition-timing-function);
 }
@@ -94,17 +91,18 @@ button:hover {
   background-color: var(--description-color);
   border-color: var(--description-color);
 }
+
 button:active {
   filter: brightness(0.9); /* This reduces brightness by 10%, making it darker */
 }
 
-@media(width < 600px){
-  button{
+@media(width < 600px) {
+  button {
     width: 191px;
   }
 }
 
-.hr_button {
+.hr-button {
   width: 100%;
   grid-column: span 12;
   display: flex;
@@ -114,7 +112,7 @@ button:active {
 }
 
 
-.hr_button > hr {
+.hr-button > hr {
   width: 35%;
 }
 

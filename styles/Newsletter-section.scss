@@ -1,7 +1,7 @@
 .newsletter-section {
   background-color: var(--newsletter-background);
   display: flex;
-  justify-content:center; 
+  justify-content: center;
   padding: 5% 10%;
 }
 
@@ -16,13 +16,13 @@
 }
 
 .newsletter-section fieldset {
-  border: none;
+  border: 0;
   max-width: 100%;
 }
 
-.newsletter-section input[type="text"] {
+.newsletter-section input[type='text'] {
   max-width: 100%;
-  border: none;
+  border: 0;
   border-bottom: 2px solid var(--description-color);
   color: var(--text-color-white);
   font: var(--font-family-heading);

@@ -13,7 +13,8 @@
 .video-section  ul {
   justify-content: flex-start;
 }
-.video-section .background-image > img{
+
+.video-section .background-image > img {
   width: 100%;
 }
 
@@ -31,11 +32,12 @@
   background-size: inherit;
 }
 
-@media(width < 600px){
-  .play-button{
+@media(width < 600px) {
+  .play-button {
     display: none;
   }
-  .video-section ul{
+
+  .video-section ul {
     flex-direction: column;
   }
 

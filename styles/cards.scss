@@ -21,7 +21,7 @@
   grid-column: span 4;
   display: flex;
   flex-direction: column;
- // height: 390px;
+  // height: 390px;
   width: 100%;
   aspect-ratio: 1/1;
   background-color: #fff;
@@ -43,7 +43,7 @@
   height: 100px;
 }
 
-.card>.text>.description_text>.description {
+.card .description-text .description {
   color: var(--text-color-gray);
 }
 
@@ -52,7 +52,7 @@
 }
 
 @media (width < 600px) {
-  .card .description_text>.description {
+  .card .description-text>.description {
     display: none;
   }
 }
