@@ -9,14 +9,14 @@ img {
 
 // Hér mun letur koma og fleira 
 @font-face {
-  font-family: "Playfair Display";
-  src: url(./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf) format('woff2');
+  font-family: 'Playfair Display';
+  src: url("./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf") format('woff2');
   font-weight: 700;
   font-style: bold;
 }
 
 @font-face {
-  font-family: "Poppins", serif;
+  font-family: Poppins, serif;
   src: url('./fonts/Poppins/Poppins-Regular.ttf') format('woff2');
   font-weight: 300;
   font-style: normal;
@@ -30,21 +30,42 @@ button {
   font-family: var(--font-family-base);
 }
 
-h1,h2,h3,legend {
+h1,
+h2,
+h3,
+legend {
   font-family: var(--font-family-heading);
 }
-h1{
+
+h1 {
   font-size: 60px;
 }
+
 h2 {
   font-size: 40px;
 }
+
 h3 {
   font-size: 22px;
 }
 
+@media (width < 600px){
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
 a,
-a:visited{
+a:visited {
   text-decoration: none;
 }
 
@@ -54,26 +75,21 @@ a h3 {
   color: var(--text-color-black);
 }
 
-
-
 button {
   color: var(--description-color);
-  border-color:var(--description-color);
-  background-color:var(--transparent);
+  border-color: var(--description-color);
+  background-color: var(--transparent);
   border: solid;
   width: 250px;
-  height: 52px;
+  aspect-ratio: 5/1;
+}
+@media(width < 600px){
+  button{
+    width: 191px;
+  }
 }
 
-.description_text {
-  display: grid;
-}
-
-.description {
-  color: var(--description-color);
-}
-
-.hr_button{
+.hr_button {
   width: 100%;
   grid-column: span 12;
   display: flex;
@@ -81,11 +97,9 @@ button {
   align-items: center;
   gap: var(--spacing);
 }
-.hr_button>button{
-  width: 250px;
-}
 
-.hr_button > hr{
+
+.hr_button > hr {
   width: 35%;
 }
 
@@ -96,21 +110,17 @@ ul {
   list-style-type: none;
   gap: var(--spacing);
 }
-ul li{
+
+ul li {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-ul li a{
+ul li a {
   color: var(--text-color-base);
 }
 
 
-.difficulty{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 

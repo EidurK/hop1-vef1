@@ -1,28 +1,44 @@
-.newsletter-section{
+.newsletter-section {
   background-color: var(--newsletter-background);
   display: flex;
   justify-content: space-around;
-  padding: 150px 130px;
+  padding: 5% 10%;
 }
 
-
-.newsletter-section form{
+.newsletter-section form {
   color: var(--text-color-white);
   width: 100%;
   grid-column: span 12;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  gap: var(--spacing);
 }
 
-.newsletter-section fieldset{
+.newsletter-section fieldset {
   border: none;
 }
-.newsletter-section input[type=text]{
+
+.newsletter-section input[type="text"] {
   border: none;
   border-bottom: 2px solid var(--description-color);
-
   color: var(--text-color-white);
   font: var(--font-family-heading);
+  background-color: var(--transparent);
+}
 
-  background-color:var(--transparent) ;
+@media(width < 600px) {
+  .newsletter-section {
+    margin-top: 5%;
+  }
+
+  .newsletter-section form {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .newletter-section fieldset {
+    display: flex;
+  }
 }

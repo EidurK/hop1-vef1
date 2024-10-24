@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>yumyum</title>
     <link href="style.css" rel="stylesheet">
+    <script src="./scripts/hamburger.js"></script>
   </head>
   <body>
     <div class="wrapper">
-
       <nav class="wrapper-nav">
         <div class="content">
           <a href="index.html">
@@ -18,13 +18,18 @@
               <h2>yum</h2>
             </div>
           </a>
-          <div class="links">
-            <ul>
-              <li><a href="sidur/Latest.html">Recipe</a></li>
-              <li><a href="sidur/Video.html">Videos</a></li>
-              <li><a href="sidur/Aboutus.html">About us</a></li>
-            </ul>
+
+          <div class="hamburger-container" onclick="ShowHide(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
+
+          <ul class="links" id="Menu">
+            <li><a href="sidur/Latest.html">Recipe</a></li>
+            <li><a href="sidur/Video.html">Videos</a></li>
+            <li><a href="sidur/Aboutus.html">About us</a></li>
+          </ul>
         </div>
 
       </nav>
@@ -159,7 +164,7 @@
           </div>
         </section>
 
-        <section class="video-section">
+        <section class="check-out-video-section">
           <div class="content">
             <div class="text">
               <div class="description_text">
@@ -168,38 +173,38 @@
               </div>
             </div>
             <div class="cards"> 
-                <div class="card">
-                  <img src="myndir/fancy_dish.png" alt=""> 
-                  <div class="text">
-                    <div class="description_text">
-                      <p class="description">September</p>
-                      <h3 class="title">Legumes printaines</h3>
-                    </div>
-                    <a href="sidur/Video.html" class="description">see</a>
+              <div class="card">
+                <img src="myndir/fancy_dish.png" alt=""> 
+                <div class="text">
+                  <div class="description_text">
+                    <p class="description">September</p>
+                    <h3 class="title">Legumes printaines</h3>
                   </div>
+                  <a href="sidur/Video.html" class="description">see</a>
                 </div>
+              </div>
 
-                <div class="card">
-                  <img src="myndir/Almond.png" alt=""> 
-                  <div class="text">
-                    <div class="description_text">
-                      <p class="description">September</p>
-                      <h3 class="title">Blossoming coockies</h3>
-                    </div>
-                    <a href="sidur/Video.html" class="description">see</a>
+              <div class="card">
+                <img src="myndir/Almond.png" alt=""> 
+                <div class="text">
+                  <div class="description_text">
+                    <p class="description">September</p>
+                    <h3 class="title">Blossoming coockies</h3>
                   </div>
+                  <a href="sidur/Video.html" class="description">see</a>
                 </div>
+              </div>
 
-                <div class="card">
-                  <img src="myndir/Breakfast.png" alt="">
-                  <div class="text">
-                    <div class="description_text">
-                      <p class="description">September</p>
-                      <h3 class="title">Blueberry pie</h3>
-                    </div>
-                    <a href="sidur/Video.html" class="description">see</a>
+              <div class="card">
+                <img src="myndir/Breakfast.png" alt="">
+                <div class="text">
+                  <div class="description_text">
+                    <p class="description">September</p>
+                    <h3 class="title">Blueberry pie</h3>
                   </div>
+                  <a href="sidur/Video.html" class="description">see</a>
                 </div>
+              </div>
             </div>
             <div class="hr_button">
               <hr>
@@ -230,7 +235,6 @@
       </main>
       <footer>
         <div class="content">
-          <hr>
           <p>Come and join us for more recipes</p>
           <ul>
             <li><a href=""><img src="myndir/Facebook-Icon.svg" alt=""></a></li>

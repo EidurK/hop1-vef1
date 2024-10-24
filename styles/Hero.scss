@@ -1,7 +1,11 @@
 .hero-section {
   height: 800px;
+  position: relative;
+  overflow: hidden;
+
 }
 
-.hero-section  ul{
+.hero-section  ul {
   justify-content: flex-start;
+
 }

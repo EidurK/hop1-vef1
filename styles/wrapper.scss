@@ -14,12 +14,14 @@
 
   /* grid items eru miðjuð */
   justify-items: center;
+  gap: var(--vertical-space);
 
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-background-primary);
 
 }
+
 .wrapper .wrapper-main {
   display: grid;
   width: 100%;
@@ -30,7 +32,8 @@
   .wrapper {
     gap: var(--vertical-space-large);
   }
-  .wrapper-main{
+
+  .wrapper-main {
     gap: var(--vertical-space-large);
   }
 }

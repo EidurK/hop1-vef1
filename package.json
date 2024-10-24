@@ -8,7 +8,7 @@
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss style.css",
     "browser-sync": "browser-sync start --server --files index.html *.css",
-    "dev": "concurrently \"npm:sass-watch\" \"npm:browser-sync\"",
+    "dev": "concurrently \"npm:sass-watch\" \"npm:browser-sync start --server --files ./scripts/hamburger.js index.html\"",
     "lint": "stylelint styles.scss './styles/*.scss'",
     "lint-fix": "stylelint styles.scss './styles/*.scss' --fix"
   },

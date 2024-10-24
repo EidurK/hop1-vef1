@@ -1,24 +1,27 @@
-.ingredients-wrapper{
+.ingredients-wrapper {
   color: var(--text-color-gray);
   width: 100%;
   grid-column: span 4;
   display: grid;
   gap: var(--vertical-space);
 }
-.method-wrapper{
+
+.method-wrapper {
   grid-column: span 8;
   color: var(--text-color-gray);
   width: 100%;
 }
 
-.ingredients-wrapper ul{
+.ingredients-wrapper ul {
   justify-content: flex-start;
   flex-direction: column;
 }
-.ingredients-wrapper ul li{
+
+.ingredients-wrapper ul li {
   justify-content: flex-start;
 }
-.ingredients-wrapper b{
+
+.ingredients-wrapper b {
   color: var(--text-color-base);
 }
 

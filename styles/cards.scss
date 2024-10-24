@@ -4,30 +4,36 @@
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: auto;
-
   gap: var(--vertical-space);
   justify-items: center;
   max-width: 100%;
 }
 
-@media (width >=600px) {
-  .card {
-    grid-column: span 4;
+@media (width < 600px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
   }
 }
 
+
 .card {
+  grid-column: span 4;
   display: flex;
   flex-direction: column;
-  height: 390px;
+ // height: 390px;
   width: 100%;
-  background-color: #FFFFFF;
+  aspect-ratio: 1/1;
+  background-color: #fff;
 }
-.card > img{
+
+.card > img {
   object-fit: cover;
+  aspect-ratio: 4/3;
   height: calc(100% - 100px);
 }
-.card >.text{
+
+.card >.text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,9 +44,15 @@
 }
 
 .card>.text>.description_text>.description {
-  color:var(--text-color-gray);
+  color: var(--text-color-gray);
 }
 
-.card a{
+.card a {
   text-decoration: none;
+}
+
+@media (width < 600px) {
+  .card .description_text>.description {
+    display: none;
+  }
 }
