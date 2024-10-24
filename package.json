@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass styles.scss styles.css",
+    "sass": "sass styles.scss style.css",
     "sass-watch": "sass --watch styles.scss style.css",
     "browser-sync": "browser-sync start --server --files index.html *.css",
     "dev": "concurrently \"npm:sass-watch\" \"npm:browser-sync start --server --files ./scripts/hamburger.js index.html\"",
