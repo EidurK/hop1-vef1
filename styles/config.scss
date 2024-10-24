@@ -6,6 +6,10 @@
 
   --transition-min-width: 600px;
 
+  /* animations */
+  --transition-time-short: 300ms;
+  --transition-timing-function: ease-in-out;
+
   /* Grid stillingar */
   --columns: 12;
   --gutter: 30px;
@@ -14,6 +18,7 @@
   --vertical-space-large: calc(var(--gutter) * 1.5);
   --spacing: 1rem;
   --width-offset: calc(100% - (2 * var(--offset)));
+  --width-small-offset: calc(100% - (2 * var(--spacing)));
   --font-family-heading: 'Playfair Display', serif;
   --font-family-base: 'Poppins', arial, helvetica, sans-serif;
   --font-size-base: 1rem;

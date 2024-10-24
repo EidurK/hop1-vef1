@@ -1,7 +1,7 @@
 .newsletter-section {
   background-color: var(--newsletter-background);
   display: flex;
-  justify-content: space-around;
+  justify-content:center; 
   padding: 5% 10%;
 }
 
@@ -17,9 +17,11 @@
 
 .newsletter-section fieldset {
   border: none;
+  max-width: 100%;
 }
 
 .newsletter-section input[type="text"] {
+  max-width: 100%;
   border: none;
   border-bottom: 2px solid var(--description-color);
   color: var(--text-color-white);
@@ -34,11 +36,13 @@
 
   .newsletter-section form {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
   }
 
   .newletter-section fieldset {
     display: flex;
+
   }
 }

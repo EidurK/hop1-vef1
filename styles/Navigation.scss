@@ -1,19 +1,20 @@
 .wrapper-nav {
-  height: 60px;
+  min-height: 60px;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: var(--background-primary);
+  flex-direction: column;
 }
 
 .wrapper-nav>.content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .wrapper-nav .links {
   justify-content: flex-end;
-
 }
 
 .bar1,
@@ -46,10 +47,12 @@
   .hamburger-container {
     display: inline-block;
   }
+  .wrapper-nav>.content {
+    flex-direction: row;
+  }
 
   .links {
     display: none;
   }
-
 }
 

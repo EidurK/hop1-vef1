@@ -8,7 +8,6 @@
   </head>
   <body>
     <div class="wrapper">
-
       <nav class="wrapper-nav">
         <div class="content">
           <a href="../index.html">
@@ -17,15 +16,27 @@
               <img src="../myndir/logo.svg" alt="">
               <h2>yum</h2>
             </div>
-        </a>
+          </a>
+
+          <div class="hamburger-container" onclick="ShowHide(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
           <ul class="links">
-            <li><a href="Recipe.html" class="description">Recipe</a></li>
-            <li><a href="Video.html">Videos</a></li>
-            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="../sidur/Latest.html">Recipe</a></li>
+            <li><a href="../sidur/Video.html">Videos</a></li>
+            <li><a href="../sidur/Aboutus.html">About us</a></li>
           </ul>
         </div>
-
+        <div class="hamburger-links" id="Menu" style="display: none;">
+          <a href="../sidur/Latest.html"><h1>Recipe</h1></a>
+          <a href="../sidur/Video.html"><h1>Videos</h1></a>
+          <a href="../sidur/Aboutus.html"><h1>About us</h1></a>
+        </div>
       </nav>
+
       <main class="wrapper-main">
         <section class="all-recipes">
           <div class="content">

@@ -1,6 +1,8 @@
 .video-section {
   height: 800px;
   color: var(--text-color-gray);
+  overflow: hidden;
+  position: relative;
 }
 
 .video-section .title {
@@ -11,6 +13,9 @@
 .video-section  ul {
   justify-content: flex-start;
 }
+.video-section .background-image > img{
+  width: 100%;
+}
 
 .play-button {
   position: absolute;
@@ -18,10 +23,21 @@
   width: 138px;
   height: 138px;
   aspect-ratio: 1/1;
-  border: 3px solid var(--text-color-white);
+  border: 2px solid var(--text-color-white);
   border-radius: 50%;
   background-image: url('../myndir/Play-Icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: inherit;
+}
+
+@media(width < 600px){
+  .play-button{
+    display: none;
+  }
+  .video-section ul{
+    flex-direction: column;
+  }
+
+
 }

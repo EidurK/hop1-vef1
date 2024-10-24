@@ -9,13 +9,17 @@
 
 .background-image>.group {
   position: relative;
-  top: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 889.76px;
   height: 1336px;
-  left: 10%;
+}
+@media(width < 600px){
+
+  .background-image>.group {
+    left: 0%;
+  }
 }
 
 .background-image .shadow-circle {

@@ -25,6 +25,7 @@
   .content{
     display: flex;
     flex-direction: column;
+    width: var(--width-small-offset);
   }
   .content .text{
     display: flex;

@@ -82,7 +82,22 @@ button {
   border: solid;
   width: 250px;
   aspect-ratio: 5/1;
+  
+  transition: background-color var(--transition-time-short)
+      var(--transition-timing-function),
+    color var(--transition-time-short) var(--transition-timing-function),
+    border-color var(--transition-time-short) var(--transition-timing-function);
 }
+
+button:hover {
+  color: var(--text-color-white);
+  background-color: var(--description-color);
+  border-color: var(--description-color);
+}
+button:active {
+  filter: brightness(0.9); /* This reduces brightness by 10%, making it darker */
+}
+
 @media(width < 600px){
   button{
     width: 191px;
